@@ -8,16 +8,8 @@ df = pd.read_csv(link)
 # Sélection des différents quartiers sous forme de liste
 borough_list = df['pickup_borough'].unique()
 
-# Duplication d'une image de taxi volant en 2
-### Créer 2 colonnes côte à côte
-col1, col2 = st.columns(2)
-
-### Afficher l'image dans chaque colonne
-with col1:
-    st.image("https://png.pngtree.com/png-clipart/20240115/original/pngtree-flying-taxi-png-image_14120966.png", width=210)
-
-with col2:
-    st.image("https://png.pngtree.com/png-clipart/20240115/original/pngtree-flying-taxi-png-image_14120966.png", width=210)
+# Affiche l'image d'un taxi volant
+st.image("https://png.pngtree.com/png-clipart/20240115/original/pngtree-flying-taxi-png-image_14120966.png", width=210)
 
 # Afficher l'image New-York skyview
 st.image("https://purepng.com/public/uploads/large/purepng.com-new-york-city-skylinecitycitiesskylineskyscrapers-251520164674syfxp.png")
